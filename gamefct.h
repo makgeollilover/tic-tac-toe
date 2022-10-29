@@ -64,6 +64,7 @@ int isover(int *win, int *n, char line1[], char line2[], char line3[])
     }
 
 
+
     else if (line1[COL_1] == 'o' && line1[COL_2] == 'o' && line1[COL_3] == 'o')
     {
         *win = 1;
@@ -90,6 +91,8 @@ int isover(int *win, int *n, char line1[], char line2[], char line3[])
         printf("Player 2 wins\n");
     }
 
+
+    //verticals
     else if(line1[COL_1] == 'o' && line2[COL_1] == 'o' && line3[COL_1] == 'o')
     {
         *win = 1;
